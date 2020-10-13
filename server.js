@@ -26,6 +26,8 @@
 // DB Connection setup and utils
 ///////////////////////////////////////////////////
 
+require('dotenv').config();
+
 var env = require('./env')( );
 var language = require('./lib/language')();
 var translate = language.set(env.settings.language).translate;
